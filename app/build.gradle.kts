@@ -4,6 +4,7 @@ plugins {
 
 android {
     namespace = "com.example.test"
+
     compileSdk {
         version = release(36)
     }
@@ -27,9 +28,15 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
+    }
+
+    // 🔥 INI YANG KELEWAT
+    buildFeatures {
+        viewBinding = true
     }
 }
 

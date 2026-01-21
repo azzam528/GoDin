@@ -1,8 +1,8 @@
-package com.example.app
+package com.example.test
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.app.databinding.ActivitySettingBinding
+import com.example.test.databinding.ActivitySettingBinding
 
 class SettingActivity : AppCompatActivity() {
 
@@ -10,15 +10,14 @@ class SettingActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         binding = ActivitySettingBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // tombol back di toolbar
         binding.topBar.setNavigationOnClickListener {
             finish()
         }
 
-        // dummy listener (ga ngubah apa-apa)
         binding.rgTheme.setOnCheckedChangeListener { _, _ -> }
         binding.switchNotif.setOnCheckedChangeListener { _, _ -> }
     }
