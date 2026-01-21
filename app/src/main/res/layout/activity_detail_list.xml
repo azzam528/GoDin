@@ -17,15 +17,24 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
             android:gravity="center_vertical"
+            android:orientation="horizontal"
             android:paddingStart="16dp">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_back"
+                app:tint="#FFFFFF" />
+
 
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:contentDescription="Logo"
-                app:srcCompat="@drawable/godin1" />
+                android:src="@drawable/godin1" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -40,14 +49,6 @@
     </com.google.android.material.appbar.MaterialToolbar>
 
     <!-- TOP BAR -->
-    <com.google.android.material.appbar.MaterialToolbar
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:background="#FFFFFF"
-        app:navigationIcon="@drawable/ic_back"
-        app:title="Mie Gacoan, Dago"
-        app:titleTextColor="#111827"
-        app:elevation="2dp" />
 
     <!-- CONTENT -->
     <ScrollView
@@ -92,6 +93,7 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        android:id="@+id/txtNamaMenu"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="MIE SUIT"
@@ -181,7 +183,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textView4"
+                            android:id="@+id/btnMinus"
                             android:layout_width="36dp"
                             android:layout_height="36dp"
                             android:gravity="center"
@@ -189,6 +191,7 @@
                             android:textStyle="bold" />
 
                         <TextView
+                            android:id="@+id/txtJumlah"
                             android:layout_width="35dp"
                             android:layout_height="35dp"
                             android:gravity="center"
@@ -196,7 +199,7 @@
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/textView3"
+                            android:id="@+id/btnPlus"
                             android:layout_width="35dp"
                             android:layout_height="35dp"
                             android:gravity="center"

@@ -11,21 +11,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Test">
-        <activity
-            android:name=".Settings"
-            android:exported="false" />
+        <!--<activity
+            android:name=".MapsActivity"
+            android:exported="true" />-->
         <activity
             android:name=".MenuList"
-            android:exported="true" />
-        <activity
-            android:name=".DetailList"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".DetailList"
+            android:exported="true"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true" />

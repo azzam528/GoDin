@@ -8,6 +8,7 @@
     android:background="#FFFFFF">
 
 
+    <!-- TOP BAR -->
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/topBar"
         android:layout_width="match_parent"
@@ -16,11 +17,21 @@
         app:titleCentered="false">
 
         <LinearLayout
+            android:id="@+id/btnBack"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
             android:gravity="center_vertical"
+            android:orientation="horizontal"
             android:paddingStart="16dp">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_back"
+                app:tint="#FFFFFF" />
+
 
             <ImageView
                 android:layout_width="50dp"
@@ -39,16 +50,6 @@
         </LinearLayout>
 
     </com.google.android.material.appbar.MaterialToolbar>
-
-
-    <com.google.android.material.appbar.MaterialToolbar
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:background="#FFFFFF"
-        app:navigationIcon="@drawable/ic_back"
-        app:title="Mie Gacoan, Dago"
-        app:titleTextColor="#111827"
-        app:elevation="2dp" />
 
 
     <!-- CONTENT -->
@@ -121,12 +122,13 @@
                     android:gravity="start" />
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/txtLokasi"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:gravity="end"
                     android:text="Lokasi Restoran"
-                    android:gravity="end" />
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -136,6 +138,7 @@
             <!-- ITEM MENU 2 -->
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardMieGacoan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -221,6 +224,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardMieHompimpa"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -297,91 +301,6 @@
                         </LinearLayout>
 
                         <!-- KANAN -->
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/makanan1" />
-
-                    </LinearLayout>
-
-                </FrameLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="4dp">
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#FFFFFF">
-
-                    <!-- BADGE PROMO -->
-
-
-                    <!-- ISI MENU -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:orientation="horizontal"
-                        android:padding="2dp">
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Burger"
-                                android:textColor="#111827"
-                                android:textSize="16sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingTop="2dp"
-                                android:text="⭐ 4.9"
-                                android:textColor="#6B7280"
-                                android:textSize="13sp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingTop="4dp"
-                                android:text="Sensasi pedas manis dijamin bikin nagih."
-                                android:textColor="#6B7280"
-                                android:textSize="13sp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:text="Rp15.000"
-                                android:textColor="#16A34A"
-                                android:textSize="15sp"
-                                android:textStyle="bold" />
-
-                            <Button
-                                android:layout_width="wrap_content"
-                                android:layout_height="36dp"
-                                android:layout_marginTop="8dp"
-                                android:backgroundTint="#0A2A5E"
-                                android:text="Tambah"
-                                android:textAllCaps="false"
-                                android:textColor="#FFFFFF"
-                                android:textSize="12sp" />
-                        </LinearLayout>
-
                         <ImageView
                             android:layout_width="100dp"
                             android:layout_height="100dp"
