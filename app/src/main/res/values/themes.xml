@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Test" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="materialButtonStyle">@style/NoTintButton</item>
+    </style>
+
+    <style name="NoTintButton" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@null</item>
+    </style>
+
+    <style name="Theme.Test" parent="Base.Theme.Test" />
+</resources>
