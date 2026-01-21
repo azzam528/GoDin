@@ -11,6 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Test">
+        <!--<activity
+            android:name=".CartActivity"
+            android:exported="false" />-->
+        <!--<activity
+            android:name=".HomeActivity"
+            android:exported="false" />-->
+        <!--<activity
+            android:name=".ProfileActivity"
+            android:exported="false" />-->
         <activity
             android:name=".SettingActivity"
             android:exported="false" />

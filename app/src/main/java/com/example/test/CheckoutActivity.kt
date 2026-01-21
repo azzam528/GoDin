@@ -12,7 +12,7 @@ class CheckoutActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_checkout)
 
-        // BACK → CartActivity
+       /* // BACK → CartActivity
         findViewById<ImageView>(R.id.btn_backcheck).setOnClickListener {
             startActivity(Intent(this, CartActivity::class.java))
             finish()
@@ -23,6 +23,6 @@ class CheckoutActivity : AppCompatActivity() {
             startActivity(Intent(this, HomeActivity::class.java))
             finishAffinity()
             // finishAffinity biar Checkout & Cart ke-clear
-        }
+        }*/
     }
 }

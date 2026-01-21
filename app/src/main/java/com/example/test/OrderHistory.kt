@@ -11,10 +11,10 @@ class OrderHistory : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_order_history)
 
-        // BACK → ProfileActivity
+       /* // BACK → ProfileActivity
         findViewById<ImageView>(R.id.btn_backhistory).setOnClickListener {
             startActivity(Intent(this, ProfileActivity::class.java))
             finish()
-        }
+        }*/
     }
 }

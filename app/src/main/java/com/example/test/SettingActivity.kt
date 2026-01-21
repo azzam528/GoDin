@@ -16,18 +16,18 @@ class SettingActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         // BACK → ProfileActivity
-        binding.btnBacksetting.setOnClickListener {
+       /* binding.btnBacksetting.setOnClickListener {
             startActivity(Intent(this, ProfileActivity::class.java))
             finish()
-        }
+        }*/
 
         // dummy listener (belum ada logic)
         binding.rgTheme.setOnCheckedChangeListener { _, _ -> }
         binding.switchNotif.setOnCheckedChangeListener { _, _ -> }
     }
 
-    override fun onBackPressed() {
+    /*override fun onBackPressed() {
         startActivity(Intent(this, ProfileActivity::class.java))
         finish()
-    }
+    }*/
 }
