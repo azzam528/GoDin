@@ -15,7 +15,7 @@ class MapsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_maps)
-//back dengan tombol fisik
+
         val callback = object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
 
