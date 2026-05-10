@@ -10,7 +10,7 @@
             android:label="@string/app_name"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
-            android:theme="@style/Theme.Test">
+            android:theme="@style/AppTheme">
 
         <activity
                 android:name=".RegistrActivity"
@@ -24,9 +24,6 @@
                 android:name=".SplashActivity"
                 android:exported="false" />
 
-        <activity
-                android:name=".MenuList"
-                android:exported="false" />
 
         <activity
                 android:name=".DetailList"
@@ -73,8 +70,12 @@
                 android:exported="false" />
 
         <activity
-                android:name=".MainActivity"
-                android:exported="true">
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".MenuList"
+            android:exported="true">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
