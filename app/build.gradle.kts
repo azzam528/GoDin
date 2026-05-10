@@ -1,13 +1,12 @@
 plugins {
     alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kapt)
 }
 
 android {
     namespace = "com.example.test"
-
-    compileSdk {
-        version = release(36)
-    }
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.test"
@@ -15,7 +14,6 @@ android {
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -34,7 +32,10 @@ android {
         targetCompatibility = JavaVersion.VERSION_11
     }
 
-    // 🔥 INI YANG KELEWAT
+    kotlinOptions {
+        jvmTarget = "11"
+    }
+
     buildFeatures {
         viewBinding = true
     }
@@ -51,4 +52,7 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation("androidx.core:core-splashscreen:1.2.0")
+    implementation("androidx.room:room-runtime:2.6.1")
+    implementation("androidx.room:room-ktx:2.6.1")
+    kapt("androidx.room:room-compiler:2.6.1")
 }
